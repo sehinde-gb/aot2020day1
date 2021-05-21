@@ -33,7 +33,7 @@ ClassMethod PartOne(dir As %String = "//day1.txt")
             
             for i=1:1:$length(result) {
                 set curr = $extract(result, i)
-                w
+                write !, curr
                 set count(curr) = $get(count(curr)) + 1
             }
 }
