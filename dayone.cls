@@ -26,7 +26,7 @@ ClassMethod PartOne(dir As %String = "//day1.txt")
         }
         set result = cards
         
-        //write !, cards
+        write !, result
         
     }
 
