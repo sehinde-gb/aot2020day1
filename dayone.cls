@@ -54,6 +54,7 @@ ClassMethod PartOne(dir As %String = "//day1.txt")
 
         }
     }
+    write !, answer
 }
 
 }
