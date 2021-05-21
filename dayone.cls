@@ -24,7 +24,7 @@ ClassMethod PartOne(dir As %String = "//day1.txt")
             set i = $INCREMENT(i)
             continue
         }
-        set result(i, cards) = ""
+        //set result(i, cards) = ""
         
         write !, cards
         
