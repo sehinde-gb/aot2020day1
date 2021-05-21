@@ -1,4 +1,4 @@
-class AOC2020.Day1 Extends %RegisteredObject
+Class AOC2020.Day1 Extends %RegisteredObject
 {
 
 ClassMethod PartOne(dir As %String = "//day1.txt")
@@ -27,4 +27,5 @@ ClassMethod PartOne(dir As %String = "//day1.txt")
 
     write !, cards
 }
+
 }
