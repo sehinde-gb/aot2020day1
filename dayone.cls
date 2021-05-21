@@ -14,18 +14,7 @@ ClassMethod PartOne(dir As %String = "//day1.txt")
     // create a new variable called sc
     set sc = file.LinkToFile(dir)
     set i = 1
-
-    // Iterate over the file and at the carriage return add a null value
-    WHILE ('file.AtEnd) {
-        
-        set cards = $TRANSLATE(file.ReadLine(), $c(13), "")
-        if cards = "" {
-            set i = $INCREMENT(i)
-            continue
-        }
-    }
-
-    write !, cards
+    write !, sc
 }
 
 }
