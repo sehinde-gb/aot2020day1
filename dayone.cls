@@ -13,7 +13,7 @@ ClassMethod PartOne(dir As %String = "//day1.txt")
     set file = ##class(%Stream.FileCharacter).%New()
     // create a new variable called sc
     set sc = file.LinkToFile(dir)
-    set i = 1
+    //set i = 1
     write !, sc
 
     // Iterate over the file and at the carriage return add a null value
