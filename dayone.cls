@@ -27,10 +27,8 @@ ClassMethod PartOne(dir As %String = "//day1.txt")
         //set result(i, cards) = ""
         
         write !, cards
-
+        write $extract(cards,1)
     }
-
-        //write $extract(cards,1)
 }
 
 }
