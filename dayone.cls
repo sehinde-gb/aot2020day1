@@ -24,13 +24,36 @@ ClassMethod PartOne(dir As %String = "//day1.txt")
             set i = $INCREMENT(i)
             continue
         }
-        //set result(i, cards) = ""
+        set result(i, cards) = ""
         
-        write !, cards
+        //write !, cards
         
     }
 
-    write $extract(cards,1)
+    set group = ""
+
+    for {
+        set group = $order(result(group))
+        
+        if group="" quit
+
+        set answer = ""
+        set people = 0
+        
+        //iterate over the answer to find its length and extract it
+        for {
+            set answer = $order(result(group, answer))
+            if answer="" quit
+            
+            set people = $INCREMENT(people)
+            
+            for i=1:1:$length(answer) {
+                set curr = $extract(answer, i)
+                set count(curr) = $get(count(curr)) + 1
+            }
+
+        }
+    }
 }
 
 }
