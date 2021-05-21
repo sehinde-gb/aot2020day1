@@ -24,11 +24,18 @@ ClassMethod PartOne(dir As %String = "//day1.txt")
             set i = $INCREMENT(i)
             continue
         }
-        set result(i, cards) = ""
+        set result = cards
         
         //write !, cards
         
     }
+
+            
+            for i=1:1:$length(result) {
+                set curr = $extract(result, i)
+                w
+                set count(curr) = $get(count(curr)) + 1
+            }
 }
 
 }
