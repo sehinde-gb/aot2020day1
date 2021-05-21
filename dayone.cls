@@ -30,11 +30,7 @@ ClassMethod PartOne(dir As %String = "//day1.txt")
 
     }
 
-        for i=1:1:$length(cards) {
-                set first = $extract(cards, i)
-                set count(first) = $get(count(first)) + 1
-        }
-        write !, first
+        write $extract(cards,1)
 }
 
 }
