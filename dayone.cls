@@ -9,15 +9,16 @@ ClassMethod PartOne(dir As %String = "//day1.txt")
     QUIT}
     ELSE { write "File: "_dir_" is open"}
 
+     write !, dir
     // instantiate a new class called file
-    set file = ##class(%String).%New()
+    //set file = ##class(%String).%New()
     // create a new variable called sc
-    set result = file.LinkToFile(dir)
-    set i = 1
+    //set result = file.LinkToFile(dir)
+    //set i = 1
  
 
      
-    write !, result
+   
     //set result="12345678900987654321"
     //for i=1:4:$length(result) write $extract(result,i,i+3),!
 }
