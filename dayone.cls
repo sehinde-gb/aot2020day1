@@ -10,7 +10,7 @@ ClassMethod PartOne(dir As %String = "//day1.txt")
     ELSE { write "File: "_dir_" is open"}
 
     // instantiate a new class called file
-    set file = ##class(%Stream.FileCharacter).%New()
+    set file = ##class(%String).%New()
     // create a new variable called sc
     set result = file.LinkToFile(dir)
     set i = 1
