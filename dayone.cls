@@ -1,7 +1,7 @@
 Class AOC2020.Day1 Extends %RegisteredObject
 {
 
-ClassMethod PartOne(dir As %Stream.FileCharacter = "//day1.txt")
+ClassMethod PartOne(dir As %String = "//day1.txt")
 {
     // Open my text file and check it exists
     IF ##class(%File).Exists(dir) '=1 {
