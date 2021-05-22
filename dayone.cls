@@ -16,20 +16,8 @@ ClassMethod PartOne(dir As %String = "//day1.txt")
     set i = 1
     //write !, sc
 
-    // Iterate over the file and at the carriage return add a null value
-    WHILE ('file.AtEnd) {
-        
-        set cards = $TRANSLATE(file.ReadLine(), $c(13), "")
-        if cards = "" {
-            set i = $INCREMENT(i)
-            continue
-        }
-        set result = cards
-        
-        write !, result
-        
-    }
 
+            set result="233434345543433400110"
             
             for i=1:4:$LENGTH(result) {
                 write $E(result,i,i+3),!    
