@@ -12,12 +12,12 @@ ClassMethod PartOne(dir As %Stream.FileCharacter = "//day1.txt")
     // instantiate a new class called file
     set file = ##class(%Stream.FileCharacter).%New()
     // create a new variable called sc
-    set sc = file.LinkToFile(dir)
+    set result = file.LinkToFile(dir)
     set i = 1
  
 
      
-    write !, sc
+    write !, result
     //set result="12345678900987654321"
     //for i=1:4:$length(result) write $extract(result,i,i+3),!
 }
