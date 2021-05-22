@@ -31,11 +31,9 @@ ClassMethod PartOne(dir As %String = "//day1.txt")
     }
 
             
-            for i=1:1:$length(result) {
-                set curr = $extract(result, i,i)
-                write !, curr
-                set count(curr) = $get(count(curr)) + 1
-            }
+            for i=1:4:$LENGTH(result) {
+                write $E(result,i,i+3),!    
+}
 }
 
 }
