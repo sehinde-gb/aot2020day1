@@ -14,7 +14,7 @@ ClassMethod PartOne(dir As %String = "//day1.txt")
     // create a new variable called sc
     set sc = file.LinkToFile(dir)
     set i = 1
-    //write !, sc
+ 
 
      
     write !, sc
