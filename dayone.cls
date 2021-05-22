@@ -3,17 +3,13 @@ Class AOC2020.Day1 Extends %RegisteredObject
 
 ClassMethod PartOne()
 {
-    set file = ##class(%File).New("//day1.txt")
-    set sc = file.Open("R")
-    if $$$ISERR(sc) quit
-        while 'file.AtEnd {
-        set str=file.ReadLine() 
-        for i=1:1:$length( str, ";" ) {
-            set id=$piece( str, ";" ,i ) 
-            write !, id  // or do smth
+        set stream=##class(%Stream.FileCharacter).%New()
+        set sc=stream.LinkToFile("//day6.txt")
+        do stream.Rewind()
+        while 'stream.AtEnd {
+                 set line=stream.ReadLine()
+                 W line,!
         }
-    }
-    do file.Close()
    
     //set result="12345678900987654321"
     //for i=1:4:$length(result) write $extract(result,i,i+3),!
