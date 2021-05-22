@@ -12,7 +12,7 @@ ClassMethod PartOne()
         }
    
     //set result="12345678900987654321"
-    //for i=1:4:$length(result) write $extract(result,i,i+3),!
+    for i=1:4:$length(line) write $extract(line,i,i+3),!
 }
 
 }
