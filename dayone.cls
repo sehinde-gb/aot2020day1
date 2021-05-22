@@ -16,15 +16,8 @@ ClassMethod PartOne(dir As %String = "//day1.txt")
     set i = 1
     //write !, sc
 
-     WHILE ('file.AtEnd) {
-        
-        set result = $TRANSLATE(file.ReadLine(), $c(13), "")
-        if result = "" {
-            set i = $INCREMENT(i)
-            continue
-        }
-    }
-    write !, result 
+     
+    write !, file
     //set result="12345678900987654321"
     //for i=1:4:$length(result) write $extract(result,i,i+3),!
 }
