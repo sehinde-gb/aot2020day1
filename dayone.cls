@@ -16,12 +16,8 @@ ClassMethod PartOne(dir As %String = "//day1.txt")
     set i = 1
     //write !, sc
 
-
-            set result="233434345543433400110"
-            
-            for i=1:4:$LENGTH(result) {
-                write $E(result,i,i+3),!    
-}
+    set result="12345678900987654321"
+    for i=1:4:$length(result) write $extract(result,i,i+3),!
 }
 
 }
