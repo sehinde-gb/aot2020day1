@@ -17,7 +17,7 @@ ClassMethod PartOne(dir As %String = "//day1.txt")
     //write !, sc
 
      
-    write !, file
+    write !, sc
     //set result="12345678900987654321"
     //for i=1:4:$length(result) write $extract(result,i,i+3),!
 }
