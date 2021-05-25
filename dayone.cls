@@ -6,15 +6,14 @@ Property line As %Stream.FileCharacter;
 ClassMethod PartOne()
 {
         set stream=##class(%Stream.FileCharacter).%New()
-        //set stream = ##class(AOC2020.Day1).%New()
+        
         set sc=stream.LinkToFile("//day1.txt")
         
         do stream.Rewind()
         while 'stream.AtEnd {
           set line=stream.ReadLine()
           w line,!
-          set oldline = ##class(AOC2020.Day1).%New()
-          do oldline.%Save()
+          w sc, !
             
         }
 
