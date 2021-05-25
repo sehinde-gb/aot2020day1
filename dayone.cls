@@ -10,9 +10,9 @@ ClassMethod PartOne()
         while 'stream.AtEnd {
           set line=stream.ReadLine()
           //w line,!
-          do line.%
+          
         }  
-
+        do line.%Save()
         //set lline = $LENGTH(line)
         //write lline
         w line, !
