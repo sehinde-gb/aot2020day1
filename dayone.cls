@@ -21,7 +21,7 @@ ClassMethod PartOne()
         }
         
          
-       //write !, file
+        write !, file
        //set lline = $LENGTH(file)
        //write !, lline
         
