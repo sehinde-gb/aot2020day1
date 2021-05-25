@@ -13,8 +13,8 @@ ClassMethod PartOne()
         while 'stream.AtEnd {
           set line=stream.ReadLine()
           w line,!
-          ZWRITE line
-          //do line.%Save()
+          //ZWRITE line
+          set sc=line.%Save()
             
         }
 
