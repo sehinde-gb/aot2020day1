@@ -12,10 +12,11 @@ ClassMethod PartOne()
           W line,!
         }  
         set lline = $LENGTH(line)
-        set readvalue = $EXTRACT(line,5,8)      
+        set account1 = $EXTRACT(line,1,4)
+        set account2 = $EXTRACT(line,5,8)      
         //write !, lline
-        write !, readvalue
-    
+        write !, account1
+        write !, account2
         
         //set secondvalue = $EXTRACT(line,1,8)
         //write !, secondvalue}
