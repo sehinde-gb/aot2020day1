@@ -18,6 +18,7 @@ ClassMethod PartOne()
             
           }
         do file.%Save()
+        set account1 = $EXTRACT(file,1,4)
         //write !, file
         }
         
