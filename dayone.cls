@@ -18,7 +18,7 @@ ClassMethod PartOne()
         //w line, !
 
         for i=1:1:4 { 
-            w line, !
+            //w line, !
             set account1 = $EXTRACT(line,1,4)            
             set account2 = $EXTRACT(line,5,8)
             set account3 = $EXTRACT(line,9,12)
