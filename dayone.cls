@@ -24,13 +24,13 @@ ClassMethod PartOne()
             set account3 = $EXTRACT(line,9,12)
             set account4 = $EXTRACT(line,13,16)
 
+            
+        }
             set append1 = account1 + account2
             set append2 = account3 + account4
 
             write !, append1
             write !, append2
-        }
-
             // for i=1:1+3:lline {
 
             //  set multiple1 = account1 * account2
