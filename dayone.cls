@@ -21,7 +21,7 @@ ClassMethod PartOne()
          
 
         // set line = ##class(AOC2020.Day1).%New()
-        w line, ! 
+        //w line, ! 
         
         //set lline = $LENGTH(line)
         //write lline
@@ -36,24 +36,23 @@ ClassMethod PartOne()
         //
         //}
 
-//  set append1 = account1 + account2
+        //  set append1 = account1 + account2
 
-//  set append2 = account3 + account4
+        //  set append2 = account3 + account4
 
-// write !, append1
+        // write !, append1
 
-// write !, append2
+        // write !, append2
 
-// for i=1:1+3:lline {
+        // for i=1:1+3:lline {
 
-//  set multiple1 = account1 * account2
+        //  set multiple1 = account1 * account2
 
-// set multiple2 = account3 * account4
+        // set multiple2 = account3 * account4
 
-// w multiple1,!
+        // w multiple1,!
 
-// w multiple2, !
-}
+        // w multiple2, !
 }
 
 }
