@@ -13,7 +13,7 @@ ClassMethod PartOne()
         while 'stream.AtEnd {
           set line=stream.ReadLine()
           w line,!
-          w sc, !
+          do line.%Save()
             
         }
 
