@@ -14,6 +14,7 @@ ClassMethod PartOne()
     set lline = $LENGTH(line)
 
     write !, lline
+    write !, line
     //set readvalue = $EXTRACT(line,1,4)
 }
 
