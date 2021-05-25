@@ -14,7 +14,7 @@ ClassMethod PartOne()
           set str=file.ReadLine()
           for i=1:1:$length( str, ";" ) {
             set id=$piece( str, ";" ,i ) 
-            write !, id  // or do smth
+            //write !, id  
           }
 
         }
@@ -22,16 +22,6 @@ ClassMethod PartOne()
          
        write !, file
 
-        //Write !, "Import Complete"
-
-        //WRITE $ZSTRIP(line,"W")
-
-        //w line, !
-        //do line.%Save()
-         
-
-        // set line = ##class(AOC2020.Day1).%New()
-        //w line, ! 
         
         //set lline = $LENGTH(line)
         //write lline
