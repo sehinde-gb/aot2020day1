@@ -12,7 +12,7 @@ ClassMethod PartOne()
           //w line,!
           
         }  
-        do line.%Save()
+        
         //set lline = $LENGTH(line)
         //write lline
         w line, !
