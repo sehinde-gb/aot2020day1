@@ -19,7 +19,7 @@ ClassMethod PartOne()
           }
         
         }
-        write !, str
+       do file.Close()
          
         
        //set lline = $LENGTH(file)
