@@ -15,6 +15,8 @@ ClassMethod PartOne()
 
         set lline = $LENGTH(line)
         write lline
+        w line, !
+        
         for i=1:4:lline { 
             w line, !
             //set account1 = $EXTRACT(line,1,4)            
