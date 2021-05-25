@@ -29,8 +29,8 @@ ClassMethod PartOne()
             for i=1:1+3:lline {
                 set multiple1 = account1 * account2
                 set multiple2 = account3 * account4
-                w multiple1,!
-                w multiple2, !
+                //w multiple1,!
+                //w multiple2, !
             }
             
         }
