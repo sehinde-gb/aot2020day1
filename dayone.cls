@@ -12,6 +12,7 @@ ClassMethod PartOne()
         do stream.Rewind()
         while 'stream.AtEnd {
           set line=stream.Read()
+          do stream.Rewind()
           w line,! 
           //set sts=stream.Write("") 
           if 'line { write "We have a problem",! quit }
