@@ -13,8 +13,8 @@ ClassMethod PartOne()
    
     set lline = $LENGTH(line)
     //write !, line
-    for i=1:1:line {
-        set readvalue = $EXTRACT(line,i,i+3)
+    for i=1:1:lline {
+        set readvalue = $EXTRACT(line,1,4)
         //for i=1:4:$length(line) set readvalue = $extract(line,i,i+3)
         //set a="1234"
         //set b ="5678"
