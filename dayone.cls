@@ -17,7 +17,7 @@ ClassMethod PartOne()
         //write lline
         //w line, !
 
-        for i=1:4:lline { 
+        for i=1:2:lline { 
             w line, !
             //set account1 = $EXTRACT(line,1,4)            
             //set account2 = $EXTRACT(line,5,8)
