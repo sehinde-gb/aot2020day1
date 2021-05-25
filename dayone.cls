@@ -15,7 +15,7 @@ ClassMethod PartOne()
 
         set lline = $LENGTH(line)
         //write lline
-        //w line, !
+        w line, !
 
         for i=1:1:4 { 
             //w line, !
@@ -31,7 +31,7 @@ ClassMethod PartOne()
             write !, append1
             write !, append2
 
-            
+
             // for i=1:1+3:lline {
 
             //  set multiple1 = account1 * account2
