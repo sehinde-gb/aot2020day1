@@ -21,9 +21,8 @@ ClassMethod PartOne()
         //do file.Close()
          
        write !, file
-
-        
-        //set lline = $LENGTH(line)
+       set lline = $LENGTH(file)
+       write !, lline
         //write lline
         //w line, !
 
