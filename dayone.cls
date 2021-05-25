@@ -9,13 +9,13 @@ ClassMethod PartOne()
         do stream.Rewind()
         while 'stream.AtEnd {
           set line=stream.ReadLine()
-          //W line,!
+          w line,!
         
         }  
 
         //set lline = $LENGTH(line)
         //write lline
-        w line, !
+        //w line, !
 
         //for i=1:1:4 { 
             //w line, !
