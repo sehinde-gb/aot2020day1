@@ -11,8 +11,13 @@ ClassMethod PartOne()
                  W line,!
         }
    
-    //set result="12345678900987654321"
-    for i=1:4:$length(line) write $extract(line,i,i+3),!
+    
+    for i=1:4:$length(line) 
+    write $extract(line,i,i+3),!
+    set colourlist= $listbuild(line)
+    set $listbuild(a,b,c,d)=colourlist
+    set addvar = a + b
+    write addvar, !
 }
 
 }
