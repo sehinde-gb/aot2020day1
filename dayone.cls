@@ -17,7 +17,7 @@ ClassMethod PartOne()
     set colourlist= $listbuild(line)
     set $listbuild(a,b,c,d)=colourlist
     
-    set addition = (a + b)
+    set addition = $LISTBUILD(a + b)
     //write addition, !
 }
 
