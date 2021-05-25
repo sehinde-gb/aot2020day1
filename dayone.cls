@@ -25,25 +25,13 @@ ClassMethod PartOne()
 
             write !, append1
             write !, append2
-
-            for i=1:1+3:lline {
-                set multiple1 = account1 * account2
-                set multiple2 = account3 * account4
-                w multiple1,!
-                w multiple2, !
-            }
-            
         }
-        
-        
-   
-        
-        
-
-      
-        
-        //set secondvalue = $EXTRACT(line,1,8)
-        //write !, secondvalue}
+            //for i=1:1+3:lline {
+              //  set multiple1 = account1 * account2
+               // set multiple2 = account3 * account4
+               // w multiple1,!
+               // w multiple2, !
+           // }
 }
 
 }
