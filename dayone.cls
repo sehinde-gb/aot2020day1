@@ -15,7 +15,7 @@ ClassMethod PartOne()
 
         }  
         //set line = ##class(AOC2020.Day1).%New()
-        //w line, ! 
+        w line, ! 
         
         //set lline = $LENGTH(line)
         //write lline
