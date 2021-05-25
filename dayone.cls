@@ -10,8 +10,9 @@ ClassMethod PartOne()
         set sc=stream.LinkToFile("//day1.txt")
         
         do stream.Rewind()
-         Write !, "Import Starts"
+         
         while 'stream.AtEnd {
+          w !, "While loop started"
           set line=stream.Read()
           //w line,! 
           
@@ -19,7 +20,10 @@ ClassMethod PartOne()
 
         }
         Write !, "Import Complete"
-        w line, !
+
+        WRITE $ZSTRIP(line,"W")
+
+        //w line, !
         //do line.%Save()
          
 
