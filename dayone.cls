@@ -17,9 +17,7 @@ ClassMethod PartOne()
             write !, id 
             
           }
-        //do id.%Save()
-        
-        //write !, file
+        write !, str
         }
         
          
