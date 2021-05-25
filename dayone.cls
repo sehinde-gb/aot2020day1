@@ -1,6 +1,8 @@
 Class AOC2020.Day1 Extends %RegisteredObject
 {
 
+Property line As %Stream.FileCharacter;
+
 ClassMethod PartOne()
 {
         set stream=##class(%Stream.FileCharacter).%New()
@@ -11,10 +13,14 @@ ClassMethod PartOne()
         while 'stream.AtEnd {
           set line=stream.ReadLine()
           w line,!
-          do line.%Save()
+          set oldline = ##class(AOC2020.Day1).%New()
+          do oldline.%Save()
+            
+        }
 
-        }  
-        //set line = ##class(AOC2020.Day1).%New()
+         
+
+        // set line = ##class(AOC2020.Day1).%New()
         w line, ! 
         
         //set lline = $LENGTH(line)
@@ -29,22 +35,25 @@ ClassMethod PartOne()
           //  set account4 = $EXTRACT(line,13,16)
         //
         //}
-          //  set append1 = account1 + account2
-          //  set append2 = account3 + account4
 
-           // write !, append1
-           // write !, append2
+//  set append1 = account1 + account2
 
+//  set append2 = account3 + account4
 
-            // for i=1:1+3:lline {
+// write !, append1
 
-            //  set multiple1 = account1 * account2
+// write !, append2
 
-            // set multiple2 = account3 * account4
+// for i=1:1+3:lline {
 
-            // w multiple1,!
+//  set multiple1 = account1 * account2
 
-            // w multiple2, !
+// set multiple2 = account3 * account4
+
+// w multiple1,!
+
+// w multiple2, !
+}
 }
 
 }
