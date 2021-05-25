@@ -14,7 +14,7 @@ ClassMethod PartOne()
     set lline = $LENGTH(line)
     //write !, line
     for i=1:1:lline {
-        set readvalue = $EXTRACT(line,i,i)
+        set readvalue = $EXTRACT(line,i,i+3)
     //for i=1:4:$length(line) set readvalue = $extract(line,i,i+3)
 
     write !, "Current readvale is: "_readvalue_" i is currently: "_i
