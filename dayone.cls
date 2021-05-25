@@ -17,9 +17,9 @@ ClassMethod PartOne()
             write !, id 
             
           }
-        write !, str
-        }
         
+        }
+        write !, str
          
         
        //set lline = $LENGTH(file)
