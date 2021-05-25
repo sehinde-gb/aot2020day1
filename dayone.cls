@@ -18,10 +18,11 @@ ClassMethod PartOne()
             
           }
         do file.%Save()
+        write !, file
         }
         
          
-        write !, file
+        
        //set lline = $LENGTH(file)
        //write !, lline
         
