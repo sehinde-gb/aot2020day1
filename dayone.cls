@@ -21,18 +21,17 @@ ClassMethod PartOne()
         //do file.Close()
          
        write !, file
-       set lline = $LENGTH(file)
-       write !, lline
+       //set lline = $LENGTH(file)
+       //write !, lline
         
-        for i=1:1+3:lline { 
+        //for i=1:1+3:lline { 
             
-          set account1 = $EXTRACT(file,1,4)
-          write !, account1            
+          //set account1 = $EXTRACT(file,1,4)
+          //write !, account1            
           //  set account2 = $EXTRACT(line,5,8)
           //  set account3 = $EXTRACT(line,9,12)
           //  set account4 = $EXTRACT(line,13,16)
-        
-        }
+
 
         //  set append1 = account1 + account2
 
@@ -50,7 +49,7 @@ ClassMethod PartOne()
 
         // w multiple1,!
 
-        // w multiple2, !
+      // w multiple2, !
 }
 
 }
