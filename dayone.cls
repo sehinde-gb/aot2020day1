@@ -18,11 +18,9 @@ ClassMethod PartOne()
         //for i=1:4:$length(line) set readvalue = $extract(line,i,i+3)
         //set a="1234"
         //set b ="5678"
-        if readvalue = "1234" {
-            set first = "1234"
-        }
-        //write !, readvalue
-        write !, first
+        
+        write !, readvalue
+        
         //write !, "Current readvale is: "_readvalue_" i is currently: "_i
         
     }
