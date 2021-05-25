@@ -12,10 +12,12 @@ ClassMethod PartOne()
         do stream.Rewind()
         while 'stream.AtEnd {
           set line=stream.ReadLine()
-          w line,!  
+          w line,! 
+          set sts=stream.Write("") 
+          if 'sts { write "We have a problem",! quit }
         }
 
-        do line.%Save()
+        //do line.%Save()
          
 
         // set line = ##class(AOC2020.Day1).%New()
