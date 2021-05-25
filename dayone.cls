@@ -13,12 +13,12 @@ ClassMethod PartOne()
           //w line,!
           
         }  
-        set line = ##class(AOC2020.Day1).%New()
-        write line, ! 
+        //set line = ##class(AOC2020.Day1).%New()
+        w line, ! 
         
         //set lline = $LENGTH(line)
         //write lline
-        w line, !
+        //w line, !
 
         //for i=1:1:4 { 
             //w line, !
