@@ -3,7 +3,8 @@ Class AOC2020.Day1 Extends %RegisteredObject
 
 ClassMethod PartOne()
 {
-        set stream=##class(%Stream.FileCharacter).%New()
+        //set stream=##class(%Stream.FileCharacter).%New()
+        set p = ##class(AOC2020.Day1).$New()
         set sc=stream.LinkToFile("//day1.txt")
         
         do stream.Rewind()
