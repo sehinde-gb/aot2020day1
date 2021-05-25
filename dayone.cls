@@ -16,8 +16,9 @@ ClassMethod PartOne()
     write $extract(line,i,i+3),!
     set colourlist= $listbuild(line)
     set $listbuild(a,b,c,d)=colourlist
-    set addition = a + b
-    write addition, !
+    
+    set addition = (a + b)
+    //write addition, !
 }
 
 }
