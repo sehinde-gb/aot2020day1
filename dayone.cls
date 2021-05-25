@@ -39,11 +39,5 @@ ClassMethod PartOne()
 
             // w multiple2, !
 }
-}
-
-
-
-
-
 
 }
