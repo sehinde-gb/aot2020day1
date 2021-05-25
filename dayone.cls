@@ -13,7 +13,7 @@ ClassMethod PartOne()
    
     
     for i=1:4:$length(line) set readvalue = $extract(line,i,i+3)
-    write readvalue,!
+    write !, "Current readvale is: "_readvalue_" i is currently: "_i
 }
 
 }
