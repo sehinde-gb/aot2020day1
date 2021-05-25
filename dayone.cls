@@ -24,9 +24,10 @@ ClassMethod PartOne()
         }
         
         set append1 = account1 + account2
-        
+        set append2 = account3 + account4
    
         write !, append1
+        write !, append2
         //write !, account2
         //write !, account3
         //write !, account4
