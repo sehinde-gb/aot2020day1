@@ -18,7 +18,7 @@ ClassMethod PartOne()
             
           }
         do file.%Save()
-        write !, file
+        //write !, file
         }
         
          
