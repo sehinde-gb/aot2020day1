@@ -12,8 +12,8 @@ ClassMethod PartOne()
         }
    
     
-    for i=1:4:$length(line) write $extract(line,i,i+3),!
-    write $piece(line, " ", 3)
+    for i=1:4:$length(line) set readvalue = $extract(line,i,i+3)
+    write readvalue,!
 }
 
 }
