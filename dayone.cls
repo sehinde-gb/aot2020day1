@@ -14,13 +14,13 @@ ClassMethod PartOne()
           set str=file.ReadLine()
           for i=1:1:$length( str, ";" ) {
             set id=$piece( str, ";" ,i ) 
-            //write !, id  
+            write !, id  
           }
 
         }
         //do file.Close()
          
-       write !, file
+       //write !, file
        //set lline = $LENGTH(file)
        //write !, lline
         
