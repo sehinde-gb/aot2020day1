@@ -14,7 +14,7 @@ ClassMethod PartOne()
           set str=file.ReadLine()
           for i=1:1:$length( str, ";" ) {
             set id=$piece( str, ";" ,i ) 
-            //write !, id 
+            write !, id 
             set lline = $LENGTH(id)
             //write !, lline
         
@@ -64,6 +64,7 @@ ClassMethod PartOne()
       // w multiple2, !
 }
 }
+
 
 
 }
