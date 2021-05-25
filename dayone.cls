@@ -10,11 +10,11 @@ ClassMethod PartOne()
         do stream.Rewind()
         while 'stream.AtEnd {
           set line=stream.ReadLine()
-          //w line,!
+          w line,!
           
         }  
         //set line = ##class(AOC2020.Day1).%New()
-        w line, ! 
+        //w line, ! 
         
         //set lline = $LENGTH(line)
         //write lline
