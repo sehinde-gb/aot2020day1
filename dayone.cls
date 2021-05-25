@@ -12,12 +12,10 @@ ClassMethod PartOne()
         do stream.Rewind()
         while 'stream.AtEnd {
           set line=stream.ReadLine()
-          w line,!
-          //ZWRITE line
-          set sc=line.%Save()
-            
+          w line,!  
         }
 
+        do line.%Save()
          
 
         // set line = ##class(AOC2020.Day1).%New()
