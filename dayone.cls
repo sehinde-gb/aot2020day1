@@ -12,7 +12,7 @@ ClassMethod PartOne()
           W line,!
         }  
         set lline = $LENGTH(line)
-        set readvalue = $EXTRACT(line,5,11)      
+        set readvalue = $EXTRACT(line,5,10)      
         //write !, lline
         write !, readvalue
     
