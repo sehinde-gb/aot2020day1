@@ -12,12 +12,13 @@ ClassMethod PartOne()
         do stream.Rewind()
         while 'stream.AtEnd {
           set line=stream.Read()
-          do stream.Rewind()
-          w line,! 
-          //set sts=stream.Write("") 
+          //w line,! 
+          
           if 'line { write "We have a problem",! quit }
-        }
 
+        }
+        Write !, "Import Complete"
+        w line, !
         //do line.%Save()
          
 
