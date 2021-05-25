@@ -5,21 +5,22 @@ Property line As %Stream.FileCharacter;
 
 ClassMethod PartOne()
 {
-        set stream=##class(%Stream.FileCharacter).%New()
+        set file=##class(%File).%New("//day1.txt")
+        set sc = file.Open("R")
+        if $$$ISERR(sc) quit
+        //set sc=stream.LinkToFile("//day1.txt")
         
-        set sc=stream.LinkToFile("//day1.txt")
-        
-        do stream.Rewind()
-         
-        while 'stream.AtEnd {
-          w !, "While loop started"
-          set line=stream.Read()
-          
-          
-          if 'line { write "We have a problem",! quit }
+        while 'file.AtEnd {
+          set str=file.ReadLine()
+          for i=1:1:$length( str, ";" ) {
+            set id=$piece( str, ";" ,i ) 
+            write !, id  // or do smth
+          }
 
         }
-        write !, line
+        do file.Close()
+         
+       write !, file
 
         //Write !, "Import Complete"
 
