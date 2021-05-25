@@ -15,7 +15,7 @@ ClassMethod PartOne()
 
     //write !, lline
     //write !, line
-    set readvalue = $EXTRACT(line,4,4)
+    set readvalue = $EXTRACT(line,5,4)
     write !, readvalue
     //set secondvalue = $EXTRACT(line,1,8)
     //write !, secondvalue
