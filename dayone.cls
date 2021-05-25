@@ -14,7 +14,7 @@ ClassMethod PartOne()
         }  
 
         set lline = $LENGTH(line)
-        for i=1:1+3:lline { 
+        //for i=1:1+3:lline { 
             set account1 = $EXTRACT(line,1,4)            
             set account2 = $EXTRACT(line,5,8)
             set account3 = $EXTRACT(line,9,12)
@@ -25,13 +25,17 @@ ClassMethod PartOne()
 
             write !, append1
             write !, append2
-        }
-            //for i=1:1+3:lline {
-              //  set multiple1 = account1 * account2
-               // set multiple2 = account3 * account4
-               // w multiple1,!
-               // w multiple2, !
-           // }
+        //}
+
+        // for i=1:1+3:lline {
+
+        //  set multiple1 = account1 * account2
+
+        // set multiple2 = account3 * account4
+
+        // w multiple1,!
+
+        // w multiple2, !
 }
 
 }
