@@ -10,6 +10,7 @@ ClassMethod PartOne()
         set sc=stream.LinkToFile("//day1.txt")
         
         do stream.Rewind()
+         Write !, "Import Starts"
         while 'stream.AtEnd {
           set line=stream.Read()
           //w line,! 
