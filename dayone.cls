@@ -15,9 +15,9 @@ ClassMethod PartOne()
           for i=1:1:$length( str, ";" ) {
             set id=$piece( str, ";" ,i ) 
             write !, id 
-            set account1 = $EXTRACT(id,1,4)
+            
           }
-        do file.%Save()
+        do id.%Save()
         
         //write !, file
         }
