@@ -23,17 +23,16 @@ ClassMethod PartOne()
        write !, file
        set lline = $LENGTH(file)
        write !, lline
-        //write lline
-        //w line, !
-
-        //for i=1:1:4 { 
-            //w line, !
-          //  set account1 = $EXTRACT(line,1,4)            
+        
+        for i=1:1+3:lline { 
+            
+          set account1 = $EXTRACT(file,1,4)
+          write !, account1            
           //  set account2 = $EXTRACT(line,5,8)
           //  set account3 = $EXTRACT(line,9,12)
           //  set account4 = $EXTRACT(line,13,16)
-        //
-        //}
+        
+        }
 
         //  set append1 = account1 + account2
 
@@ -53,5 +52,19 @@ ClassMethod PartOne()
 
         // w multiple2, !
 }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 }
