@@ -11,8 +11,8 @@ ClassMethod PartOne()
         while 'stream.AtEnd {
           set line=stream.ReadLine()
           w line,!
-          set newline = line
-          w line, !
+          do line.%Save()
+
         }  
         //set line = ##class(AOC2020.Day1).%New()
         //w line, ! 
