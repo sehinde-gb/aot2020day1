@@ -14,14 +14,16 @@ ClassMethod PartOne()
         while 'stream.AtEnd {
           w !, "While loop started"
           set line=stream.Read()
-          //w line,! 
+          
           
           if 'line { write "We have a problem",! quit }
 
         }
-        Write !, "Import Complete"
+        write !, line
 
-        WRITE $ZSTRIP(line,"W")
+        //Write !, "Import Complete"
+
+        //WRITE $ZSTRIP(line,"W")
 
         //w line, !
         //do line.%Save()
