@@ -15,6 +15,17 @@ ClassMethod PartOne()
           for i=1:1:$length( str, ";" ) {
             set id=$piece( str, ";" ,i ) 
             //write !, id 
+            set lline = $LENGTH(id)
+            //write !, lline
+        
+            for i=1:1+3:lline { 
+            
+            set account1 = $EXTRACT(file,1,4)
+            write !, account1  
+            }
+            //  set account2 = $EXTRACT(line,5,8)
+            //  set account3 = $EXTRACT(line,9,12)
+            //  set account4 = $EXTRACT(line,13,16)
             
           }
         
@@ -52,5 +63,7 @@ ClassMethod PartOne()
 
       // w multiple2, !
 }
+}
+
 
 }
