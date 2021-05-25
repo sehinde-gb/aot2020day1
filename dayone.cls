@@ -9,7 +9,7 @@ ClassMethod PartOne()
         do stream.Rewind()
         while 'stream.AtEnd {
           set line=stream.ReadLine()
-          W line,!
+          //W line,!
         
         }  
 
