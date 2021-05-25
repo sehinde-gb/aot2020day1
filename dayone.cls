@@ -15,7 +15,7 @@ ClassMethod PartOne()
 
         set lline = $LENGTH(line)
         //write lline
-        w line, !
+        //w line, !
 
         for i=1:4:lline { 
             w line, !
