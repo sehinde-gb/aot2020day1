@@ -16,17 +16,17 @@ ClassMethod PartOne()
         set lline = $LENGTH(line)
         for i=1:1+3:lline { 
             set account1 = $EXTRACT(line,1,4)            
+            set account2 = $EXTRACT(line,5,8)
+            set account3 = $EXTRACT(line,9,12)
+            set account4 = $EXTRACT(line,13,16)
 
-
+            
         }
         
+        set append1 = account1 + account2
         
-        //set account1 = $EXTRACT(line,1,4)
-        //set account2 = $EXTRACT(line,5,8)
-        //set account3 = $EXTRACT(line,9,12)
-        //set account4 = $EXTRACT(line,13,16)
-        //write !, lline
-        write !, account1
+   
+        write !, append1
         //write !, account2
         //write !, account3
         //write !, account4
