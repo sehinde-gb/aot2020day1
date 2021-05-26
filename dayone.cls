@@ -5,33 +5,34 @@ Property line As %Stream.FileCharacter;
 
 ClassMethod PartOne()
 {
-        set file=##class(%File).%New("//day1.txt")
-        set sc = file.Open("R")
-        if $$$ISERR(sc) quit
+    SET namestring="Deborah Noah Martha Bowie"
+    SET namelist=$LISTFROMSTRING(namestring," ")
+    WRITE !,"1st element: ",$LIST(namelist,1)
+        //set file=##class(%File).%New("//day1.txt")
+        //set sc = file.Open("R")
+        //if $$$ISERR(sc) quit
         //set sc=stream.LinkToFile("//day1.txt")
         
-        while 'file.AtEnd {
-          set str=file.ReadLine()
-          for i=1:1:$length( str, ";" ) {
-            set id=$piece( str, ";" ,i ) 
-            write !, id 
-            set lline = $LENGTH(id)
+        //while 'file.AtEnd {
+          //set str=file.ReadLine()
+          //for i=1:1:$length( str, ";" ) {
+          //  set id=$piece( str, ";" ,i ) 
+          //  write !, id 
+          //  set lline = $LENGTH(id)
             //write !, lline
         
-            for i=1:1+3:lline { 
+          //  for i=1:1+3:lline { 
             
-            set account1 = $EXTRACT(file,1,4)
-            write !, account1  
-            }
+          //  set account1 = $EXTRACT(file,1,4)
+          //  write !, account1  
+           // }
             //  set account2 = $EXTRACT(line,5,8)
             //  set account3 = $EXTRACT(line,9,12)
             //  set account4 = $EXTRACT(line,13,16)
+
             
-          }
-        
-        }
-       do file.Close()
-       write !, file  
+        //do file.Close()
+        //write !, file  
         
        //set lline = $LENGTH(file)
        //write !, lline
@@ -63,8 +64,5 @@ ClassMethod PartOne()
 
       // w multiple2, !
 }
-}
-
-
 
 }
