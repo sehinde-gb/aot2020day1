@@ -5,11 +5,16 @@ Property line As %Stream.FileCharacter;
 
 ClassMethod PartOne()
 {
+    /// Works ///
     SET namestring="Deborah Noah Martha Bowie"
     SET namelist=$LISTFROMSTRING(namestring," ")
     WRITE !,"1st element: ",$LIST(namelist,1)
     SET time=$LIST(namelist,1)
     write !, time
+
+    set colourlist=$LISTBUILD("red", "blue" 
+
+
         //set file=##class(%File).%New("//day1.txt")
         //set sc = file.Open("R")
         //if $$$ISERR(sc) quit
