@@ -6,13 +6,16 @@ Property line As %Stream.FileCharacter;
 ClassMethod PartOne()
 {
     /// Works ///
-    SET namestring="Deborah Noah Martha Bowie"
-    SET namelist=$LISTFROMSTRING(namestring," ")
-    WRITE !,"1st element: ",$LIST(namelist,1)
-    SET time=$LIST(namelist,1)
-    write !, time
+    //SET namestring="Deborah Noah Martha Bowie"
+    //SET namelist=$LISTFROMSTRING(namestring," ")
+    //WRITE !,"1st element: ",$LIST(namelist,1)
+    //SET time=$LIST(namelist,1)
+    //write !, time
 
-    set colourlist=$LISTBUILD("red", "blue" 
+    SET (a,b,c,d,e)=0
+    SET colorlist=$LISTBUILD("red","blue","green","white")
+    SET $LISTBUILD(a,b,c,d,e)=colorlist
+    WRITE "a=",a," b=",b," c=",c," d=",d," e=",e
 
 
         //set file=##class(%File).%New("//day1.txt")
