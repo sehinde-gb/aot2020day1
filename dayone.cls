@@ -13,8 +13,8 @@ ClassMethod PartOne()
     //write !, time
 
     SET (a,b,c,d,e)=0
-    SET colorlist=$LISTBUILD("red","blue","green","white")
-    SET $LISTBUILD(a,b,c,d,e)=colorlist
+    SET numberlist=$LISTBUILD("1721","979","366","299")
+    SET $LISTBUILD(a,b,c,d,e)=numberlist
     WRITE "a=",a," b=",b," c=",c," d=",d," e=",e
 
 
