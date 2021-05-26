@@ -9,6 +9,7 @@ ClassMethod PartOne()
     SET namelist=$LISTFROMSTRING(namestring," ")
     WRITE !,"1st element: ",$LIST(namelist,1)
     SET time=$LIST(namelist,1)
+    write !, time
         //set file=##class(%File).%New("//day1.txt")
         //set sc = file.Open("R")
         //if $$$ISERR(sc) quit
