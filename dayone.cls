@@ -12,6 +12,7 @@ ClassMethod PartOne()
     //SET time=$LIST(namelist,1)
     //write !, time
 
+    /// Works ///
     SET (a,b,c,d,e)=0
     SET numberlist=$LISTBUILD("1721","979","366","299")
     SET $LISTBUILD(a,b,c,d,e)=numberlist
