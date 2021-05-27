@@ -5,15 +5,10 @@ Property line As %String;
 
 ClassMethod PartOne()
 {
-    set (a,b,c,d,e)=0
-    set numberlist=$LISTBUILD("1721","979","366","299")
-    set $LISTBUILD(a,b,c,d,e)=numberlist
-    write "a=",a," b=",b," c=",c," d=",d," e=",e
+    // on a previous attempt I read the file as a stream and iterated over the loop 
+    // to find the length of the stream and wrote the output to the screen
 
-    
-
-
-        //set file=##class(%File).%New("//day1.txt")
+    //set file=##class(%File).%New("//day1.txt")
         //set sc = file.Open("R")
         //if $$$ISERR(sc) quit
         //set sc=stream.LinkToFile("//day1.txt")
@@ -25,31 +20,24 @@ ClassMethod PartOne()
           //  write !, id 
           //  set lline = $LENGTH(id)
             //write !, lline
-        
-          //  for i=1:1+3:lline { 
-            
-          //  set account1 = $EXTRACT(file,1,4)
-          //  write !, account1  
-           // }
-            //  set account2 = $EXTRACT(line,5,8)
-            //  set account3 = $EXTRACT(line,9,12)
-            //  set account4 = $EXTRACT(line,13,16)
 
-            
-        //do file.Close()
-        //write !, file  
-        
-       //set lline = $LENGTH(file)
-       //write !, lline
-        
-        //for i=1:1+3:lline { 
-            
-          //set account1 = $EXTRACT(file,1,4)
-          //write !, account1            
-          //  set account2 = $EXTRACT(line,5,8)
-          //  set account3 = $EXTRACT(line,9,12)
-          //  set account4 = $EXTRACT(line,13,16)
+    // set the variables that I will use to reference the list I am creating
+    set (a,b,c,d,e)=0
+    // build the list of numbers
+    set numberlist=$LISTBUILD("1721","979","366","299")
+    set $LISTBUILD(a,b,c,d,e)=numberlist
+    // as a test I have written the variables out to the screen
+    write "a=",a," b=",b," c=",c," d=",d," e=",e
 
+    // the next step is to create a loop so that I can add them together
+    // the final step is to create another loop and multiple the variables together
+
+
+        
+        
+          
+        
+       
 
         //  set append1 = account1 + account2
 
@@ -58,16 +46,6 @@ ClassMethod PartOne()
         // write !, append1
 
         // write !, append2
-
-        // for i=1:1+3:lline {
-
-        //  set multiple1 = account1 * account2
-
-        // set multiple2 = account3 * account4
-
-        // w multiple1,!
-
-      // w multiple2, !
 }
 
 }
