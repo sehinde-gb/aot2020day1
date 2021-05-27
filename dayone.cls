@@ -26,7 +26,7 @@ ClassMethod PartOne()
     // build the list of numbers
     set numberlist=$LISTBUILD("1721","979","366","299", "675", "1456")
     set $LISTBUILD(a,b,c,d,e,f)=numberlist
-    write !, numberlist
+    //write !, numberlist
     
     for i=1:1:$length(numberlist) {
       //set append1 = a + b
@@ -61,6 +61,7 @@ ClassMethod PartOne()
 // write !, append2
 }
 }
+
 
 
 
