@@ -29,8 +29,8 @@ ClassMethod PartOne()
     write !, numberlist
     
     for i=1:1:$length(numberlist) {
-      set append1 = a + b
-      write !, append1
+      //set append1 = a + b
+      //write !, append1
       
       set append2 = c + d
       write !, append2  
@@ -61,6 +61,8 @@ ClassMethod PartOne()
 // write !, append2
 }
 }
+
+
 
 
 
