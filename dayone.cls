@@ -28,9 +28,9 @@ ClassMethod PartOne()
     set $LISTBUILD(a,b,c,d,e,f)=numberlist
     //write !, numberlist
     
-    for i=1:1:$length(numberlist) {
-      //set append1 = a + b
-      //write !, append1
+    for i=1:1:1 {
+      set append1 = a + b
+      write !, append1
       
       set append2 = c + d
       write !, append2  
