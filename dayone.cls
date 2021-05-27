@@ -5,18 +5,12 @@ Property line As %Stream.FileCharacter;
 
 ClassMethod PartOne()
 {
-    /// Works ///
-    //SET namestring="Deborah Noah Martha Bowie"
-    //SET namelist=$LISTFROMSTRING(namestring," ")
-    //WRITE !,"1st element: ",$LIST(namelist,1)
-    //SET time=$LIST(namelist,1)
-    //write !, time
+    set (a,b,c,d,e)=0
+    set numberlist=$LISTBUILD("1721","979","366","299")
+    set $LISTBUILD(a,b,c,d,e)=numberlist
+    write "a=",a," b=",b," c=",c," d=",d," e=",e
 
-    /// Works ///
-    SET (a,b,c,d,e)=0
-    SET numberlist=$LISTBUILD("1721","979","366","299")
-    SET $LISTBUILD(a,b,c,d,e)=numberlist
-    WRITE "a=",a," b=",b," c=",c," d=",d," e=",e
+    
 
 
         //set file=##class(%File).%New("//day1.txt")
