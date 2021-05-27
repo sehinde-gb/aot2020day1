@@ -24,12 +24,16 @@ ClassMethod PartOne()
     // set the variables that I will use to reference the list I am creating
     set (a,b,c,d,e)=0
     // build the list of numbers
-    set numberlist=$LISTBUILD("1721","979","366","299")
-    set $LISTBUILD(a,b,c,d,e)=numberlist
+    set numberlist=$LISTBUILD("1721","979","366","299", "675", "1456")
+    set $LISTBUILD(a,b,c,d,e,f)=numberlist
+    write !, numberlist
     // as a test I have written the variables out to the screen
-    write "a=",a," b=",b," c=",c," d=",d," e=",e
+    write "a=",a," b=",b," c=",c," d=",d," e=",e," f=",f
 
     // the next step is to create a loop so that I can add them together
+    //set answer1 = a + b
+    //write !, answer1
+
     // the final step is to create another loop and multiple the variables together
 
 
