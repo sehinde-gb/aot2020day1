@@ -59,24 +59,5 @@ ClassMethod PartOne()
 // write !, append1
 
 // write !, append2
-}
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 }
