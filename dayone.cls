@@ -1,7 +1,7 @@
 Class AOC2020.Day1 Extends %RegisteredObject
 {
 
-Property line As %Stream.FileCharacter;
+Property line As %String;
 
 ClassMethod PartOne()
 {
