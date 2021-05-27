@@ -27,8 +27,13 @@ ClassMethod PartOne()
     set numberlist=$LISTBUILD("1721","979","366","299", "675", "1456")
     set $LISTBUILD(a,b,c,d,e,f)=numberlist
     write !, numberlist
+    
+    for i=1:1:$length(numberlist) {
+      set append1 = a + b
+      write !, append1
+    }
     // as a test I have written the variables out to the screen
-    write "a=",a," b=",b," c=",c," d=",d," e=",e," f=",f
+    //write "a=",a," b=",b," c=",c," d=",d," e=",e," f=",f
 
     // the next step is to create a loop so that I can add them together
     //set answer1 = a + b
@@ -51,5 +56,7 @@ ClassMethod PartOne()
 
         // write !, append2
 }
+}
+
 
 }
