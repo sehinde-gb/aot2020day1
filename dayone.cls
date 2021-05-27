@@ -37,27 +37,19 @@ ClassMethod PartOne()
 
       set append3 = e + f
       write !, append3
+
+      for i=1:1:1 {
+        set multiple1 = a * b
+        write !, multiple1
+
+        set multiple2 = c * d
+        write !, multiple2
+
+        set multiple3 = e * f  
+        write !, multiple3
+      } 
+    
     }
 }
-
-// as a test I have written the variables out to the screen
-
-// write "a=",a," b=",b," c=",c," d=",d," e=",e," f=",f
-
-// the next step is to create a loop so that I can add them together
-
-// set answer1 = a + b
-
-// write !, answer1
-
-// the final step is to create another loop and multiple the variables together
-
-//  set append1 = account1 + account2
-
-//  set append2 = account3 + account4
-
-// write !, append1
-
-// write !, append2
 
 }
