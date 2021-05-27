@@ -31,32 +31,48 @@ ClassMethod PartOne()
     for i=1:1:$length(numberlist) {
       set append1 = a + b
       write !, append1
+      
+      set append2 = c + d
+      write !, append2  
+
+      set append3 = e + f
+      write !, append3
     }
-    // as a test I have written the variables out to the screen
-    //write "a=",a," b=",b," c=",c," d=",d," e=",e," f=",f
+}
 
-    // the next step is to create a loop so that I can add them together
-    //set answer1 = a + b
-    //write !, answer1
+// as a test I have written the variables out to the screen
 
-    // the final step is to create another loop and multiple the variables together
+// write "a=",a," b=",b," c=",c," d=",d," e=",e," f=",f
 
+// the next step is to create a loop so that I can add them together
 
-        
-        
-          
-        
-       
+// set answer1 = a + b
 
-        //  set append1 = account1 + account2
+// write !, answer1
 
-        //  set append2 = account3 + account4
+// the final step is to create another loop and multiple the variables together
 
-        // write !, append1
+//  set append1 = account1 + account2
 
-        // write !, append2
+//  set append2 = account3 + account4
+
+// write !, append1
+
+// write !, append2
 }
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 }
