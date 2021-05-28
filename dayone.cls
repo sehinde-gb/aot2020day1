@@ -5,49 +5,54 @@ Property line As %String;
 
 ClassMethod PartOne()
 {
-    // on a previous attempt I read the file as a stream and iterated over the loop 
-    // to find the length of the stream and wrote the output to the screen
-
-    //set file=##class(%File).%New("//day1.txt")
-        //set sc = file.Open("R")
-        //if $$$ISERR(sc) quit
-        //set sc=stream.LinkToFile("//day1.txt")
-        
-        //while 'file.AtEnd {
-          //set str=file.ReadLine()
-          //for i=1:1:$length( str, ";" ) {
-          //  set id=$piece( str, ";" ,i ) 
-          //  write !, id 
-          //  set lline = $LENGTH(id)
-            //write !, lline
-
+    
     // set the variables that I will use to reference the list I am creating
-    set (a,b,c,d,e)=0
+    set (number1,number2,number3,number4,number5,number6)=0
     // build the list of numbers
     set numberlist=$LISTBUILD("1721","979","366","299", "675", "1456")
-    set $LISTBUILD(a,b,c,d,e,f)=numberlist
+    set $LISTBUILD(number1,number2,number3,number4,number5,number6)=numberlist
     //write !, numberlist
     
+    // A nested loop has been created and the first loop loops through and it 
+    // appends the numbers together. The loop starts sequentially adding the 
+    // numbers together and it then progresses and adds them in random ways
+
     for i=1:1:1 {
-      set append1 = a + b
+      set append1 = number1 + number2
       write !, append1
       
-      set append2 = c + d
+      set append2 = number3 + number4
       write !, append2  
 
-      set append3 = e + f
+      set append3 = number5 + number6
       write !, append3
 
-      for i=1:1:1 {
-        set multiple1 = a * b
-        write !, multiple1
+      set append4 = number1 + number3
+      write !, append4
 
-        set multiple2 = c * d
-        write !, multiple2
+      set append5 = number1 + number4
+      write !, "correct answer=", append5
 
-        set multiple3 = e * f  
-        write !, multiple3
-      } 
+      
+      // a nested loop that multiplies the numbers together to get the overall result
+
+
+        for i=1:1:1 {
+          set multiple1 = number1 * number2
+          write !, multiple1
+
+          set multiple2 = number3 * number4
+          write !, multiple2
+
+          set multiple3 = number5 * number6  
+          write !, multiple3
+
+          set multiple4 = number1 * number4
+          write !, "correct answer=", multiple4
+
+          set multiple5 = number4 * number5
+          write !, multiple5
+        } 
     
     }
 }
