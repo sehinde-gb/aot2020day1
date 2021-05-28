@@ -3,6 +3,8 @@ Class AOC2020.Day1 Extends %RegisteredObject
 
 Property append As %String;
 
+Property multiply As %String;
+
 ClassMethod PartOne()
 {
     
@@ -56,6 +58,10 @@ ClassMethod PartOne()
 
           set multiple5 = number4 * number5
           write !, multiple5
+
+          set result = ##class(AOC2020.Day1).%New()
+          set result.multiply = multiple4  
+          write !, result.multiply
         } 
     
     }
