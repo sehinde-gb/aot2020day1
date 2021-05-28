@@ -1,7 +1,7 @@
 Class AOC2020.Day1 Extends %RegisteredObject
 {
 
-Property line As %String;
+Property append As %String;
 
 ClassMethod PartOne()
 {
@@ -32,6 +32,10 @@ ClassMethod PartOne()
 
       set append5 = number1 + number4
       write !, "correct answer=", append5
+
+      set result = ##class(AOC2020.Day1).%New()
+      set result.append = append5  
+      write !, result.append
 
       
       // a nested loop that multiplies the numbers together to get the overall result
